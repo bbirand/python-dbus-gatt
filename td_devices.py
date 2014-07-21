@@ -50,10 +50,11 @@ print bluez.get_args()[0]
 # Returns:
 # ('b', False)
 
+# Bring up the interface
 bluez = conn.call_method(adapter, 'Set',
           interface='org.freedesktop.DBus.Properties', 
-          format = 'ssu', 
-          args=('org.bluez.Adapter1', 'Powered', True),
+          format = 'ssv', 
+          args=('org.bluez.Adapter1', 'Powered', ('b', True)),
           destination='org.bluez')
 
 

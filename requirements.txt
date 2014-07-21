@@ -1,0 +1,4 @@
+PyBluez==0.20
+ipython==2.1.0
+pexpect==2.4
+python-tdbus==0.9
